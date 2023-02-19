@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Notes</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <div class="nav-bar">
+          <div id="see">
+            <div class="menu--list"></div>
+            <div class="menu--list"></div>
+            <div class="menu--list"></div>
+          </div>
+          <a href="./index.html">
+            <h1>
+              <span style="color: orange">Add</span
+              ><span style="color: white">Notes</span>
+            </h1></a
+          >
+          <div class="search">
+            <input id="search" type="text" placeholder="Search" />
+            <button id="searchButton">Search</button>
+          </div>
+        </div>
+        <div class="down-container">
+          <div class="show-bar">
+            <button id="showArchive" class="showArchive">Archive</button><br />
+            <button id="noteButton">Note</button>
+          </div>
+
+          <div id="form" class="form">
+            <h1 id="editAlert" style="display: none"></h1>
+            <label for="title">Title</label>
+            <input
+              name="title"
+              id="title"
+              type="text"
+              placeholder="Enter your title"
+            />
+            <label for="description">Note</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+            ></textarea
+            ><br />
+            <div class="buttonDiv">
+              <button id="add-note-button">Add Note</button
+              ><button id="backupBtn">Back up</button>
+            </div>
+          </div>
+
+          <div id="buttons" class="buttons"></div>
+        </div>
+      </div>
+
+      <div class="showNote">
+        <center>
+          <h1>Your note shows here:</h1>
+        </center>
+        <div class="Extrabuttons" id="Extrabuttons">
+          <button id="deleteSelected">Delete selected</button>
+          <button id="archive">Archive</button>
+          <button id="moveSelected">Move to Bin</button>
+        </div>
+
+        <div id="notes" class="notes">
+          <!-- <pre id="empty" style="color: gray">
+Nothing to show! Add some notes </pre
+          > -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
